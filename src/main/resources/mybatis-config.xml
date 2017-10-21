@@ -3,7 +3,18 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <settings>
+        <!-- 日志开启 -->
+        <setting name="logImpl" value="LOG4J"/>
+        <!-- 二级缓存开启 -->
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="aggressiveLazyLoading" value="true"/>
+    </settings>
+    
+    <!-- 此项目需要的typeAliases -->
     <typeAliases>
         <package name="com.gobha.model"/>
     </typeAliases>
+    
 </configuration>

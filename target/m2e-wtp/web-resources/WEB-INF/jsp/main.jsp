@@ -21,6 +21,10 @@
 	<body>
 		<h2>登录成功！</h2>
 		<h3>欢迎你&nbsp;&nbsp;${sessionScope.session_user.user_name }</h3>
+		<form action="sys/search">
+		  <input name="search" type="text">
+		  <button>查询</button>
+		</form>
 		<form action="sys/exit">
 		  <button>退出</button>
 		</form>
